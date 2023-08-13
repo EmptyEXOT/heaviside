@@ -1,0 +1,5 @@
+.viewport {
+    position: relative;
+    overflow: hidden;
+    border: black solid 1px
+}
