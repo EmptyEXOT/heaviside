@@ -1,33 +1,32 @@
 'use client'
 
-import {FC, useEffect, useState} from "react";
-import {useAppDispatch, useAppSelector} from "@/redux/hooks";
-import {Size} from "@/arch/types/Size";
+import {FC} from "react";
+import {useAppSelector} from "@/redux/hooks";
 import {Pin} from "@/arch/Grid/Pin/Pin";
-import {Cords} from "@/arch/types/Cords";
-import Viewport from "@/arch/Viewport/Viewport";
+import {selectGrid, selectPins, toPx} from "@/arch/Grid/gridSlice";
+import cls from './Grid.module.css'
 
 interface GridProps {
 
 }
 
 export const Grid: FC<GridProps> = (props) => {
-    const grid = useAppSelector(state => state.grid)
-
-
+    const grid = useAppSelector(selectGrid)
+    const pins = useAppSelector(selectPins)
     return (
 
-            <div style={{width: grid.size.width+'px', height: grid.size.height+'px'}}>
-                <svg style={{width: 100+'%', height: 100+'%'}}>
-                    {
-                        grid.pins.map((pin) =>
-                            <Pin key={pin.id} id={pin.id}/>
-                        )
-                    }
-                </svg>
+        <div style={{
+            width: toPx(grid.size.width, grid.unitSize, true),
+            height: toPx(grid.size.height, grid.unitSize, true)
+        }}>
+            <svg className={cls.pinWrapper}>
+                {
+                    pins.map((pin) =>
+                        <Pin key={pin.id} id={pin.id}/>
+                    )
+                }
+            </svg>
 
-            </div>
-
-
+        </div>
     )
 }
