@@ -1,10 +1,9 @@
-
-import { createSlice } from '@reduxjs/toolkit'
-import type { PayloadAction } from '@reduxjs/toolkit'
-import type { RootState } from '@/redux/store'
+import type {PayloadAction} from '@reduxjs/toolkit'
+import {createSlice} from '@reduxjs/toolkit'
+import type {RootState} from '@/redux/store'
 import {Size} from "@/arch/types/Size";
-import {ReactNode} from "react";
 import {Cords} from "@/arch/types/Cords";
+import cfg from '../arch.config.json'
 
 interface PinState {
     hover: boolean;
@@ -12,7 +11,7 @@ interface PinState {
 
 interface IPin {
     id: number;
-    cords: Cords,
+    cords: Pick<Cords, 'cx' | 'cy'>,
     isBusy: boolean,
     radius: number,
     color: string,
@@ -25,25 +24,35 @@ interface GridState {
     pins: Array<IPin>,
 }
 
-// Define the initial state using that type
+export function toPx(value: number, multiplier: number, px: boolean = false) {
+    if (px) return (value * multiplier) + 'px';
+    else return value * multiplier;
+}
+
 const initialState: GridState = {
     size: {
-        height: 500,
-        width: 500,
+        height: cfg.grid.size.height,
+        width: cfg.grid.size.width,
     },
-    unitSize: 50,
+    unitSize: cfg.grid.unitSize,
     pins: initPins(),
-
 }
 
 function initPins(): Array<IPin> {
     let counter = 0;
     const pinArr: Array<IPin> = []
-    const width = 10
-    const height = 10
-    for (let i = 0; i < width; i++) {
-        for (let k = 0; k < height; k++) {
-            pinArr.push({cords: {cx: i * 50, cy: k * 50}, isBusy: false, id: counter++, radius: 7, color: "blue", state: {hover: false}})
+    const width = cfg.grid.size.width
+    const height = cfg.grid.size.height
+    for (let x = 1; x < height; x++) {
+        for (let y = 1; y < width; y++) {
+            pinArr.push({
+                cords: {cx: y * cfg.grid.unitSize, cy: x * cfg.grid.unitSize},
+                isBusy: false,
+                id: counter++,
+                radius: 7,
+                color: "blue",
+                state: {hover: false}
+            })
         }
     }
     console.log(pinArr);
@@ -66,9 +75,9 @@ export const gridSlice = createSlice({
     },
 })
 
-export const { setBusy, setHover, removeHover } = gridSlice.actions
+export const {setBusy, setHover, removeHover} = gridSlice.actions
 
-// Other code such as selectors can use the imported `RootState` type
 export const selectGrid = (state: RootState) => state.grid
+export const selectPins = (state: RootState) => state.grid.pins
 
 export default gridSlice.reducer

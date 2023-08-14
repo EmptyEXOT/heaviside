@@ -1,7 +1,5 @@
-import {FC, useEffect, useRef, useState} from "react";
+import {FC, useEffect} from "react";
 import {useAppDispatch, useAppSelector} from "@/redux/hooks";
-import {collapse, expand} from "@/arch/Grid/Pin/pinSlice";
-import {Cords} from "@/arch/types/Cords";
 import {removeHover, setHover} from "@/arch/Grid/gridSlice";
 
 interface PinProps {
@@ -13,7 +11,7 @@ export const Pin: FC<PinProps> = (props) => {
     const pin = useAppSelector(state => state.grid.pins[props.id])
 
     useEffect(() => {
-        console.log(pin);
+        // console.log(pin);
     }, [pin]);
 
     const onHover = () => {
