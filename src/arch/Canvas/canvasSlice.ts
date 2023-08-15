@@ -21,7 +21,7 @@ interface Bounds {
 
 const initialState: CanvasState = {
     size: {height: (cfg.grid.size.height) * cfg.grid.unitSize, width: (cfg.grid.size.width) * cfg.grid.unitSize},
-    startPos: {x: cfg.startPos.x, y: cfg.startPos.y},
+    startPos: {x: cfg.canvas.startPos.x, y: cfg.canvas.startPos.y},
 }
 
 const canvasSlice = createSlice({
