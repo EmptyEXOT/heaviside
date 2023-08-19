@@ -17,7 +17,7 @@ export const Grid: FC<GridProps> = (props) => {
 
         <div style={{
             width: toPx(grid.size.width, grid.unitSize, true),
-            height: toPx(grid.size.height, grid.unitSize, true)
+            height: toPx(grid.size.height, grid.unitSize, true),
         }}>
             <svg className={cls.pinWrapper}>
                 {
