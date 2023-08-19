@@ -1,11 +1,13 @@
 import {configureStore} from "@reduxjs/toolkit";
 import GridReducer from '../arch/Grid/gridSlice'
 import CanvasReducer from '../arch/Canvas/canvasSlice'
+import MechReducer from '../arch/units/mechs/reducer'
 export const store = configureStore({
     devTools: true,
     reducer: {
         grid: GridReducer,
-        canvas: CanvasReducer
+        canvas: CanvasReducer,
+        mechs: MechReducer
     },
 })
 

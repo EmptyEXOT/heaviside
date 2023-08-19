@@ -6,8 +6,30 @@
     },
     "unitSize": 50
   },
-  "startPos": {
-    "x": -150,
-    "y": -100
+  "canvas": {
+    "startPos": {
+      "x": -150,
+      "y": -100
+    }
+  },
+  "units": {
+    "mechs": {
+      "values": [
+        {
+          "id": 0,
+          "cords": {
+            "x": 5,
+            "y": 3
+          }
+        },
+        {
+          "id": 1,
+          "cords": {
+            "x": 13,
+            "y": 3
+          }
+        }
+      ]
+    }
   }
 }
