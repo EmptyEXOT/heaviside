@@ -1,6 +1,7 @@
 import {FC, useEffect} from "react";
 import {useAppDispatch, useAppSelector} from "@/redux/hooks";
 import {removeHover, setHover} from "@/arch/Grid/gridSlice";
+import {Unit} from "@/arch/units/unitsSlice";
 
 interface PinProps {
     id: number;
@@ -9,6 +10,7 @@ interface PinProps {
 export const Pin: FC<PinProps> = (props) => {
     const dispatch = useAppDispatch();
     const pin = useAppSelector(state => state.grid.pins[props.id])
+    const isBusy = pin.unitLink;
 
     useEffect(() => {
         // console.log(pin);
@@ -20,6 +22,10 @@ export const Pin: FC<PinProps> = (props) => {
 
     const onLeave = () => {
         dispatch(removeHover(props.id))
+    }
+
+    const getColor = (isBusy: Unit | null) => {
+        return isBusy ? 'grey' : pin.color;
     }
 
     return (
