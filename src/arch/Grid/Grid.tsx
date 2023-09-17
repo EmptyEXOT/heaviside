@@ -13,6 +13,7 @@ interface GridProps {
 export const Grid: FC<GridProps> = (props) => {
     const grid = useAppSelector(selectGrid)
     const pins = useAppSelector(selectPins)
+
     return (
 
         <div style={{
@@ -21,8 +22,10 @@ export const Grid: FC<GridProps> = (props) => {
         }}>
             <svg className={cls.pinWrapper}>
                 {
-                    pins.map((pin) =>
-                        <Pin key={pin.id} id={pin.id}/>
+                    pins.map((y, indexY) =>
+                        y.map((x, indexX) =>
+                            <Pin key={x.id} cords={{cy: indexY, cx: indexX}}/>
+                        )
                     )
                 }
             </svg>
