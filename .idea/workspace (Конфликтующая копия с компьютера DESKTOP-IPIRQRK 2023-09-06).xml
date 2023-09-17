@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="733990c1-d779-4543-9bbb-e680f12617fb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arch/Canvas/Canvas.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/arch/Canvas/Canvas.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arch/Grid/Grid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/arch/Grid/Grid.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arch/Grid/Pin/Pin.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/arch/Grid/Pin/Pin.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arch/Grid/gridSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/arch/Grid/gridSlice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arch/units/Unit/Unit.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/arch/units/Unit/Unit.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arch/units/mechs/Values/Value.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/arch/units/mechs/Values/Value.tsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2TpgjohWrMXpcYBOftWNAtUPrrS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dots-rework&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/DropboxPlus/Dropbox/Code/heaviside&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\DropboxPlus\\Dropbox\\Code\\heaviside\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\DB\Dropbox\Code\heaviside\src\arch\units\mechs" />
+      <recent name="F:\DB\Dropbox\Code\heaviside\src\arch" />
+      <recent name="F:\DB\Dropbox\Code\heaviside\src\units" />
+      <recent name="F:\DB\Dropbox\Code\heaviside\src\arch\Grid" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="733990c1-d779-4543-9bbb-e680f12617fb" name="Changes" comment="" />
+      <created>1691745573686</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1691745573686</updated>
+      <workItem from="1691745574719" duration="7949000" />
+      <workItem from="1691783045958" duration="12015000" />
+      <workItem from="1691853043141" duration="7389000" />
+      <workItem from="1691915090872" duration="34036000" />
+      <workItem from="1692104626990" duration="3363000" />
+      <workItem from="1692117758697" duration="591000" />
+      <workItem from="1692340560624" duration="7085000" />
+      <workItem from="1692358246434" duration="36253000" />
+      <workItem from="1692521882791" duration="695000" />
+      <workItem from="1692633578192" duration="1697000" />
+      <workItem from="1693512177295" duration="4264000" />
+      <workItem from="1693695686424" duration="4697000" />
+      <workItem from="1693704067626" duration="23253000" />
+      <workItem from="1693818607400" duration="4466000" />
+      <workItem from="1693901572467" duration="729000" />
+      <workItem from="1693934511369" duration="169000" />
+      <workItem from="1694015198819" duration="106000" />
+      <workItem from="1694015326470" duration="320000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

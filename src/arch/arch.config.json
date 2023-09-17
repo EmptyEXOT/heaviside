@@ -12,6 +12,31 @@
       "y": -100
     }
   },
+  "pipelines": {
+    "default": [
+      {
+        "id": 0,
+        "breakpoints": [
+          {
+            "x": 10,
+            "y": 4
+          },
+          {
+            "x": 10,
+            "y": 10
+          },
+          {
+            "x": 7,
+            "y": 10
+          },
+          {
+            "x": 7,
+            "y": 13
+          }
+        ]
+      }
+    ]
+  },
   "units": {
     "mechs": {
       "values": [
@@ -27,6 +52,72 @@
           "cords": {
             "x": 13,
             "y": 3
+          }
+        }
+      ],
+      "smelters": [
+        {
+          "id": 0,
+          "cords": {
+            "x": 9,
+            "y": 1
+          },
+          "slots": {
+            "pipe": [
+              {
+                "id": 0,
+                "isBusy": false,
+                "position": {
+                  "x": 1,
+                  "y": 3
+                },
+                "isNecessary": true,
+                "direction": "from",
+                "pipeId": 0
+              },
+              {
+                "id": 1,
+                "isBusy": false,
+                "position": {
+                  "x": 1,
+                  "y": 0
+                },
+                "isNecessary": true,
+                "pipeId": 0,
+                "direction": "to"
+              }
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "cords": {
+            "x": 6,
+            "y": 13
+          },
+          "slots": {
+            "pipe": [
+              {
+                "id": 0,
+                "isBusy": false,
+                "position": {
+                  "x": 1,
+                  "y": 0
+                },
+                "isNecessary": true,
+                "pipeId": null
+              },
+              {
+                "id": 1,
+                "isBusy": false,
+                "position": {
+                  "x": 1,
+                  "y": 3
+                },
+                "isNecessary": true,
+                "pipeId": null
+              }
+            ]
           }
         }
       ]
